@@ -1,11 +1,10 @@
-# Event Management System
+Event Management System
 
 A full-stack web application built with **Python Flask** and **SQLite**, covering
 Admin, Vendor, and User roles as specified in the assignment wireframes.
 
----
 
-## Project Structure
+Project Structure
 
 ```
 event_management/
@@ -40,9 +39,8 @@ event_management/
     └── guest_list.html
 ```
 
----
 
-## Setup & Run
+Setup & Run
 
 ```bash
 # 1. Install dependencies
@@ -54,18 +52,17 @@ python app.py
 
 Open http://127.0.0.1:5000 in your browser.
 
----
 
-## Default Admin Credentials
+
+Default Admin Credentials
 
 | Field    | Value      |
 |----------|------------|
 | User ID  | `admin`    |
 | Password | `admin123` |
 
----
 
-## Role Flow (as per flowchart)
+Role Flow (as per flowchart)
 
 ```
 START → INDEX
@@ -78,17 +75,17 @@ START → INDEX
                                          ↳ Guest List
 ```
 
----
 
-## Features Implemented
 
-### Admin
+Features Implemented
+
+Admin
 - Login with hidden password
 - Dashboard (Maintenance Menu – Admin only)
 - Maintain Users – view & delete registered users
 - Maintain Vendors – view & delete vendors (cascades to products)
 
-### Vendor
+Vendor
 - Sign Up with Name, User ID, Email, Password, Category (dropdown: Catering / Florist / Decoration / Lighting)
 - Login with hidden password + show/hide toggle
 - Dashboard: view all own products with Update / Delete
@@ -97,7 +94,7 @@ START → INDEX
 - Product Status: view orders containing own products; update status (Received → Ready for Shipping → Out For Delivery)
 - Requested Items: view item requests submitted by users
 
-### User
+User
 - Sign Up with Name, User ID, Email, Password
 - Login with hidden password
 - User Portal with category filter (Catering / Florist / Decoration / Lighting)
@@ -110,7 +107,7 @@ START → INDEX
 - Request Item: submit custom item requests to vendors
 - Guest List: view all registered users
 
-### General
+General
 - Session management (role-based: admin / vendor / user)
 - Form validations (all required fields, email, numeric price, file type)
 - Flash messages for all actions
@@ -118,9 +115,7 @@ START → INDEX
 - Image upload with secure filename
 - Fully responsive UI (Bootstrap 5)
 
----
-
-## Technology Stack
+Technology Stack
 
 | Layer      | Technology           |
 |------------|----------------------|
